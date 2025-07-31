@@ -1,0 +1,91 @@
+import streamlit as st
+import numpy as np
+from scipy.special import expit
+import joblib
+import matplotlib.pyplot as plt
+from streamlit_geolocation import streamlit_geolocation
+from datetime import datetime
+from streamlit_folium import st_folium
+import folium
+
+
+
+
+# Load pretrained Bayesian GMM model
+gmm = joblib.load("bayesian_gmm.pkl")
+
+st.title("¿Sufres sobrecalentamiento en tu vivienda durante olas de calor en Pamplona, Navarra?")
+
+st.markdown("Responde a las siguientes preguntas para saber si podrías estar en riesgo de sufrir de sobrecalentamiento:")
+
+# User inputs
+temp = st.slider("Temperatura del termostato (°C)", 22.0, 31.0, 24.0)
+has_ac = st.selectbox("¿Tienes al menos un aparato de aire acondicionado instalado en la casa?", ["Sí", "No"])
+hw = st.selectbox("¿Está Pamplona sufriendo una ola de calor?", ["No", "Sí"])
+gender = st.selectbox("Sexo", ["Mujer", "Hombre"])
+
+
+# Encode inputs
+x = [
+    temp,
+    1 if has_ac == "No" else 0,
+    1 if hw == "Sí" else 0,
+    1 if gender == "Mujer" else 0
+]
+
+# Logistic Regression with updated coefficients
+intercept = -19.0980 
+coeffs = [0.6331, 2.0876, 0.9799, 0.9758]
+linear_combination = intercept + np.dot(coeffs, x)
+prob = expit(linear_combination)
+
+# Bayesian GMM
+prob_array = np.array([[prob]])
+posterior = gmm.predict_proba(prob_array)
+cluster = gmm.predict(prob_array)[0]
+
+# Get probabilities for each of the 2 clusters
+prob_cluster_0 = posterior[0][1]
+prob_cluster_1 = posterior[0][0]
+
+# Definir cuál es el clúster de alto riesgo: asumimos que cluster 1 es alto riesgo (ajusta si necesario)
+cluster_info = {
+    0: {'label': 'Bajo riesgo de sobrecalentamiento', 'color': 'blue', 'icon': '🟦'},
+    1: {'label': 'Alto riesgo de sobrecalentamiento', 'color': 'red', 'icon': '🟥'},
+    'intermedio': {'label': 'Riesgo intermedio', 'color': 'orange', 'icon': '⚪'}
+}
+
+# Asignar etiqueta basada en la mayor probabilidad, pero considerar solapamiento
+confidence_threshold = 0.8  # Puedes ajustar este umbral
+if max(prob_cluster_0, prob_cluster_1) < confidence_threshold:
+    most_likely_cluster = 'intermedio'
+else:
+    most_likely_cluster = int(np.argmax([prob_cluster_0, prob_cluster_1]))
+
+risk_label = cluster_info[most_likely_cluster]['icon'] + " " + cluster_info[most_likely_cluster]['label']
+
+
+
+
+
+# Mostrar resultados
+st.subheader("Tu riesgo de sobrecalentamiento:")
+st.write(f"Probabilidad estimada de sobrecalentamiento: **{prob:.2f}**")
+st.success(f"**Tu perfil pertenece al grupo de: {cluster_info[most_likely_cluster]['icon']} {cluster_info[most_likely_cluster]['label']}**")
+
+
+cluster_probs = [prob_cluster_0, prob_cluster_1]
+
+with st.expander("Detalles del riesgo"):
+    st.markdown("### Probabilidades de pertenencia a cada grupo:")
+    
+    # Mostrar las probabilidades por grupo
+    for i in [0, 1]:
+        info = cluster_info[i]
+        st.write(f"{info['icon']} {info['label']} (Cluster {i}): **{cluster_probs[i]:.2f}**")
+    
+    st.write(f"🔶 Nivel de confianza en la clasificación: **{max(cluster_probs):.2f}**")
+
+
+
+
