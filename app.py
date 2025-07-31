@@ -25,10 +25,10 @@ for i in range(2):
 # ──────────────────────────────────────────────────────────────
 # Streamlit Interface
 
-st.title("¿Tu vivienda se sobrecalienta durante olas de calor en Pamplona?")
+st.title("¿Tu vivienda se sobrecalienta durante olas de calor en Pamplona, Navarra?")
 
 st.markdown("""
-Este diagnóstico está basado en datos reales de encuestas realizadas en Pamplona durante los veranos de 2021 y 2022.  
+Esta herramienta está basada en datos reales de encuestas realizadas en Pamplona durante los veranos de 2021 y 2022.  
 
 Consulta el artículo científico:  
 **Gamero-Salinas, J., López-Hernández, D., González-Martínez, P., Arriazu-Ramos, A., Monge-Barrio, A., & Sánchez-Ostiz, A. (2024)**.  
