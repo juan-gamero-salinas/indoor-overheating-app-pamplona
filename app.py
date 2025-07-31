@@ -11,6 +11,7 @@ import folium
 
 
 
+
 # Load pretrained Bayesian GMM model
 gmm = joblib.load("bayesian_gmm.pkl")
 
