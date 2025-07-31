@@ -3,10 +3,6 @@ import numpy as np
 from scipy.special import expit
 import joblib
 import matplotlib.pyplot as plt
-from streamlit_geolocation import streamlit_geolocation
-from datetime import datetime
-from streamlit_folium import st_folium
-import folium
 
 
 
