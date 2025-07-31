@@ -10,11 +10,12 @@ merge_gdf = pd.read_csv("df.csv")
 
 # Fit the Bayesian GMM with 2 components
 gmm = BayesianGaussianMixture(n_components=2, random_state=0)
-gmm.fit(merge_gdf[["prob_overheat_skater"]])
+X = merge_gdf[["prob_overheat_skater"]].values  # shape: (n_samples, 1)
+gmm.fit(X)
 
 # Predict probabilities and labels for the dataset
-probs = gmm.predict_proba(merge_gdf[["prob_overheat_skater"]])
-preds = gmm.predict(merge_gdf[["prob_overheat_skater"]])
+probs = gmm.predict_proba(X)
+preds = gmm.predict(X)
 
 # Store in dataframe
 merge_gdf["GMM_Cluster"] = preds
