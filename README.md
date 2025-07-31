@@ -12,7 +12,7 @@ Este es un prototipo interactivo desarrollado para estimar el **riesgo de sobrec
 - Si hay o no una ola de calor activa
 - Sexo de la persona usuaria
   
-Utiliza un **modelo de clustering + probabilidad supervisada** entrenado con datos locales.
+Utiliza un **modelo de clustering + probabilidad supervisada** entrenado con datos de encuesta.
 
 ---
 
