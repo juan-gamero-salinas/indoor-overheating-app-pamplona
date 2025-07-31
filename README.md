@@ -1,6 +1,6 @@
 # 🔥 ¿Sufres sobrecalentamiento en tu vivienda durante olas de calor en Pamplona (Navarra)?
 
-Este es un prototipo interactivo desarrollado para estimar el **riesgo de sobrecalentamiento en interiores** durante olas de calor en Pamplona, Navarra. El objetivo es ayudar a identificar **hogares vulnerables** usando un modelo de clasificación basado en datos reales.
+Este es un prototipo interactivo desarrollado para estimar el **riesgo de sobrecalentamiento en el interior de viviendas** durante olas de calor en Pamplona, Navarra. El objetivo es ayudar a identificar **hogares vulnerables** usando un modelo de clasificación basado en datos reales (encuestas).
 
 ---
 
@@ -10,7 +10,7 @@ Este es un prototipo interactivo desarrollado para estimar el **riesgo de sobrec
 - Temperatura interior registrada
 - Presencia o ausencia de aire acondicionado
 - Si hay o no una ola de calor activa
-- Sexo de la persona usuaria (como proxy de percepción térmica, según estudios)
+- Sexo de la persona usuaria
   
 Utiliza un **modelo de clustering + probabilidad supervisada** entrenado con datos locales.
 
@@ -18,7 +18,7 @@ Utiliza un **modelo de clustering + probabilidad supervisada** entrenado con dat
 
 ## 🛠 ¿Cómo usarla?
 
-1. Abre la aplicación en [Streamlit](https://your-app-url.streamlit.app)  
+1. Abre la aplicación en [Streamlit](https://indoor-overheating-app-pamplona.streamlit.app/)  
 2. Responde a preguntas breves como:
    - ¿Cuál es la temperatura del termostato?
    - ¿Tienes aire acondicionado?
@@ -66,5 +66,5 @@ PhD en Diseño Ambiental y Tecnológico en Arquitectura por la Universidad de Na
 
 ## 🧪 Disclaimer
 
-Este modelo es una **herramienta exploratoria** basada en datos de encuesta. **No reemplaza diagnósticos técnicos o asesoría profesional**, pero puede ayudar a orientar decisiones sobre ventilación, reformas o instalación de sistemas de climatización.
+Este modelo es una **herramienta exploratoria!!** basada en datos de encuesta. **No reemplaza diagnósticos técnicos, asesoría profesional o normativas**, pero puede ayudar a orientar decisiones sobre ventilación, reformas o instalación de sistemas de climatización.
 
