@@ -28,7 +28,9 @@ for i in range(2):
 st.title("¿Tu vivienda se sobrecalienta durante olas de calor en Pamplona?")
 
 st.markdown("""
-Este diagnóstico está basado en datos reales de encuestas realizadas en Pamplona durante los veranos de 2021 y 2022.  Consulta el artículo científico:  
+Este diagnóstico está basado en datos reales de encuestas realizadas en Pamplona durante los veranos de 2021 y 2022.  
+
+Consulta el artículo científico:  
 **Gamero-Salinas, J., López-Hernández, D., González-Martínez, P., Arriazu-Ramos, A., Monge-Barrio, A., & Sánchez-Ostiz, A. (2024)**.  
 *Exploring indoor thermal comfort and its causes and consequences amid heatwaves in a Southern European city—An unsupervised learning approach*.  
 *Building and Environment, 265, 111986*.
