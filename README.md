@@ -66,5 +66,5 @@ Arquitecto, PhD en Diseño Ambiental y Tecnológico en Arquitectura por la Unive
 
 ## 🧪 Disclaimer
 
-Este modelo es una **herramienta exploratoria!!** basada en datos de encuesta. **No reemplaza diagnósticos técnicos, asesoría profesional o normativas**, pero puede ayudar a orientar decisiones sobre ventilación, reformas o instalación de sistemas de climatización.
+Este modelo es una **herramienta exploratoria!!** basada en datos de encuesta. **No reemplaza diagnósticos técnicos, asesoría profesional o normativas**, pero puede ayudar a orientar decisiones relacionadas al diagnóstico de sobrecalentamiento interior.
 
