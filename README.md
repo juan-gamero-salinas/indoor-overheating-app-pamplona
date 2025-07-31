@@ -59,8 +59,8 @@ Tu perfil pertenece al grupo de: 🟥 Alto riesgo de sobrecalentamiento
 ## 📍 Sobre el autor
 
 Juan Gamero-Salinas  
-PhD en Diseño Ambiental y Tecnológico en Arquitectura por la Universidad de Navarra (2021)
-👨‍💻 [GitHub](https://github.com/juan-gamero-salinas) | 🔗 [LinkedIn](https://www.linkedin.com/in/juangamerosalinas/) | 📧 arqgamero@gmail.com
+Arquitecto, PhD en Diseño Ambiental y Tecnológico en Arquitectura por la Universidad de Navarra (2021)
+👨‍💻 [GitHub](https://github.com/juan-gamero-salinas) | 🔗 [LinkedIn](https://www.linkedin.com/in/juangamerosalinas/)
 
 ---
 
