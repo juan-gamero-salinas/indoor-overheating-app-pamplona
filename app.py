@@ -28,7 +28,9 @@ for i in range(2):
 st.title("¿Tu vivienda se sobrecalienta durante olas de calor en Pamplona, Navarra?")
 
 st.markdown("""
-Esta herramienta interactiva estima el riesgo de **sobrecalentamiento interior** durante una ola de calor, basándose en datos de encuestas realizadas en Pamplona en los veranos de 2021 y 2022. Responde las siguientes preguntas para saber si tu vivienda podría estar en riesgo de **sobrecalentamiento** durante una ola de calor.
+Esta herramienta interactiva estima el riesgo de **sobrecalentamiento interior** durante una ola de calor, basándose en datos de encuestas realizadas en Pamplona en los veranos de 2021 y 2022. 
+
+Responde las siguientes preguntas para saber si tu vivienda podría estar en riesgo de **sobrecalentamiento** durante una ola de calor.
 """)
 
 # User inputs
