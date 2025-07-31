@@ -28,7 +28,7 @@ for i in range(2):
 st.title("¿Tu vivienda se sobrecalienta durante olas de calor en Pamplona, Navarra?")
 
 st.markdown("""
-Responde las siguientes preguntas para saber si tu vivienda podría estar en riesgo de **sobrecalentamiento** durante una ola de calor.
+Esta herramienta interactiva estima el riesgo de **sobrecalentamiento interior** durante una ola de calor, basándose en datos de encuestas realizadas en Pamplona en los veranos de 2021 y 2022. Responde las siguientes preguntas para saber si tu vivienda podría estar en riesgo de **sobrecalentamiento** durante una ola de calor.
 """)
 
 # User inputs
@@ -90,14 +90,19 @@ with st.expander("Detalles del riesgo"):
 
 
 
+# ──────────────────────────────────────────────────────────────
+# Información adicional y disclaimer
+
 st.markdown("""
-Esta herramienta "exploratoria" está basada en datos reales de encuestas realizadas en Pamplona durante los veranos de 2021 y 2022.  
+---
 
-Consulta el artículo científico:  
-**Gamero-Salinas, J., López-Hernández, D., González-Martínez, P., Arriazu-Ramos, A., Monge-Barrio, A., & Sánchez-Ostiz, A. (2024)**.  
+📖 **Referencia científica**:  
+Gamero-Salinas, J., López-Hernández, D., González-Martínez, P., Arriazu-Ramos, A., Monge-Barrio, A., & Sánchez-Ostiz, A. (2024).  
 *Exploring indoor thermal comfort and its causes and consequences amid heatwaves in a Southern European city—An unsupervised learning approach*.  
-*Building and Environment, 265, 111986*.
+*Building and Environment, 265, 111986.*
 
-Responde las siguientes preguntas para saber si tu vivienda podría estar en riesgo de **sobrecalentamiento** durante una ola de calor.
+⚠️ **Disclaimer**:  
+Este modelo es una herramienta **exploratoria** basada en datos de encuestas.  
+**No reemplaza diagnósticos técnicos, asesoría profesional ni normativas legales**, pero puede ayudar a orientar decisiones relacionadas al diagnóstico de sobrecalentamiento interior.
 """)
 
