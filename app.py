@@ -25,8 +25,14 @@ for i in range(2):
 # ──────────────────────────────────────────────────────────────
 # Streamlit Interface
 
-st.title("¿Sufres sobrecalentamiento en tu vivienda durante olas de calor en Pamplona, Navarra?")
-st.markdown("Responde a las siguientes preguntas para saber si podrías estar en riesgo de sufrir de sobrecalentamiento:")
+st.markdown("""
+Este diagnóstico está basado en datos reales de encuestas realizadas en Pamplona durante los veranos de 2021 y 2022.  Consulta el artículo científico:  
+**Gamero-Salinas, J., López-Hernández, D., González-Martínez, P., Arriazu-Ramos, A., Monge-Barrio, A., & Sánchez-Ostiz, A. (2024)**.  
+*Exploring indoor thermal comfort and its causes and consequences amid heatwaves in a Southern European city—An unsupervised learning approach*.  
+*Building and Environment, 265, 111986*.
+
+Responde las siguientes preguntas para saber si tu vivienda podría estar en riesgo de **sobrecalentamiento** durante una ola de calor.
+""")
 
 # User inputs
 temp = st.slider("Temperatura del termostato (°C)", 22.0, 31.0, 24.0)
