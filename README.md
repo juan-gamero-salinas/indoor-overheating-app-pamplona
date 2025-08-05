@@ -7,8 +7,8 @@ Este es un prototipo interactivo desarrollado para estimar el **riesgo de sobrec
 ## 🧠 ¿Qué hace esta herramienta?
 
 🔍 Evalúa tu riesgo en función de:
-- Temperatura interior registrada
-- Presencia o ausencia de aire acondicionado
+- Temperatura interior registrada en el termostato
+- Presencia o ausencia de aire acondicionado en la vivienda
 - Si hay o no una ola de calor activa
 - Sexo de la persona usuaria
   
