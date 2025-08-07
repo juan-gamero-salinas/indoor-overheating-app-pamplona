@@ -68,3 +68,11 @@ Arquitecto, PhD en Diseño Ambiental y Tecnológico en Arquitectura por la Unive
 
 Este modelo es una **herramienta exploratoria!!** basada en datos de encuesta. **No reemplaza diagnósticos técnicos, asesoría profesional o normativas**, pero puede ayudar a orientar decisiones relacionadas al diagnóstico de sobrecalentamiento interior.
 
+
+---
+
+## License
+
+This project is licensed under the Apache License 2.0.  
+See the [LICENSE](LICENSE) file for details.
+
