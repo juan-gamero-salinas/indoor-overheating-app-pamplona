@@ -123,3 +123,13 @@ Este modelo es una herramienta **exploratoria** basada en datos de encuestas.
 **No reemplaza diagnósticos técnicos, asesoría profesional ni normativas legales**, pero puede ayudar a orientar decisiones relacionadas al diagnóstico de sobrecalentamiento interior.
 """)
 
+
+st.markdown("""
+---
+
+📄 **Licencia**  
+Este software/app está licenciado bajo la [Licencia Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0).  
+Puedes usarlo, modificarlo y distribuirlo libremente, pero **sin garantías** y **sin derechos sobre marcas registradas**.  
+Consulta el archivo [LICENSE](https://github.com/juan-gamero-salinas/indoor-overheating-app-pamplona/blob/master/LICENSE) para más información.
+""")
+
