@@ -128,8 +128,6 @@ st.markdown("""
 ---
 
 📄 **Licencia**  
-Este software/app está licenciado bajo la [Licencia Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0).  
-Puedes usarlo, modificarlo y distribuirlo libremente, pero **sin garantías** y **sin derechos sobre marcas registradas**.  
-Consulta el archivo [LICENSE](https://github.com/juan-gamero-salinas/indoor-overheating-app-pamplona/blob/master/LICENSE) para más información.
+Este software/app está licenciado bajo la [Licencia Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0). Consulta el archivo [LICENSE](https://github.com/juan-gamero-salinas/indoor-overheating-app-pamplona/blob/master/LICENSE) para más información.
 """)
 
